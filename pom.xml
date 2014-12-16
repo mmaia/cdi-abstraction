@@ -9,12 +9,11 @@
 	<description>Testing CDI abstraction implementation.</description>
 	<dependencies>
 		<dependency>
-			<groupId>org.icefaces</groupId>
-			<artifactId>icefaces-ace</artifactId>
-			<version>3.3.0</version>
-			<scope>runtime</scope>
+			<groupId>org.primefaces</groupId>
+			<artifactId>primefaces</artifactId>
+			<version>5.1</version>
 		</dependency>
-
+		
 		<dependency>
 			<groupId>org.webjars</groupId>
 			<artifactId>bootstrap</artifactId>

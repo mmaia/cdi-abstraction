@@ -5,8 +5,8 @@
 		xmlns:f="http://java.sun.com/jsf/core"
 		xmlns:ui="http://java.sun.com/jsf/facelets"
 		xmlns:h="http://java.sun.com/jsf/html"
-		xmlns:ace="http://www.icefaces.org/icefaces/components"
-		xmlns:icecore="http://www.icefaces.org/icefaces/core">	
+		xmlns:p="http://primefaces.org/ui"
+		>	
 
 <h:head>
 <title>CDI Abstraction</title>
@@ -25,14 +25,14 @@
 		</div>
 		<div class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand">CDI Abstraction - JBoss Version</a>
+				<a class="navbar-brand">CDI Abstraction - Liberty Version</a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="index.xhtml">Home</a></li>
 					<li><a href="https://developer.ibm.com/wasdev/docs/introducing_the_liberty_profile" target="blank">WebSphere
 							Liberty</a></li>
-					<li><a href="http://www.icefaces.org" target="blank">IceFaces</a></li>
+					<li><a href="http://www.primefaces.org" target="blank">PrimeFaces</a></li>
 					<li><a href="http://getbootstrap.com" target="blank">Bootstrap</a></li>
 				</ul>
 			</div>
@@ -43,18 +43,28 @@
 	<div class="container theme-showcase" role="main">
 		<h:form>
 			<div class="jumbotron">
-				<h:panelGrid columns="1">
-					<ace:textEntry value="#{dummyCalcController.x}" label="X Value:" id="xFieldId" labelPosition="left" required="true" /> 
-					<br/>
-					<ace:textEntry value="#{dummyCalcController.y}" label="Y Value:" id="yFieldId" labelPosition="left" required="true" />
-					<br/>
+				<h:panelGrid columns="2">
+					<h:outputText value="X Value:"/>
+					<p:inputText value="#{dummyCalcController.x}" id="xFieldId" required="true" /> 
 				</h:panelGrid>
-				<h:panelGrid columns="3">
+				
+					<br/>
+				
+				<h:panelGrid columns="2">
+					<h:outputText value="Y Value:"/>
+					<p:inputText value="#{dummyCalcController.y}" id="yFieldId" required="true"/>
+				</h:panelGrid>
+				
+					<br/>
+				
+				<h:panelGrid columns="4">
 					<h:commandButton class="btn btn-lg btn-primary" value="Add Operation" action="#{dummyCalcController.add}"/>
-					<h:outputText value="&#160;&#160;&#160;" /><!-- just adding some space, does nothing -->
+					<p:spacer/><p:spacer/>
 					<h:commandButton class="btn btn-lg btn-primary" value="Subtract Operation" action="#{dummyCalcController.subtract}" />
 				</h:panelGrid>
-				<br/>
+				
+					<br/>
+				
 				<h:outputText value="#{dummyCalcController.result}" />
 			</div>
 		</h:form>

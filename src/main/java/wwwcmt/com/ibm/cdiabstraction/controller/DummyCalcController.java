@@ -51,7 +51,7 @@ public class DummyCalcController {
 	public String subtract(){
 		log.info("Executing subtract");
 		int result = opSub.execute(x, y);
-		this.result = "Result of subtract of " + x + " + y " + y + " = " + result;
+		this.result = "Result of subtract of " + x + " - " + y + " = " + result;
 		return "success";
 	}
 
