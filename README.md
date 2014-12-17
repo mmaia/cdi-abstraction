@@ -10,7 +10,7 @@ https://www.ibm.com/developerworks/community/blogs/devTips/entry/implementing_js
 
 
  * version 1 - CDI Abstraction example
- * @author - Marcos Maia - mpais@br.ibm.com, maia.marcos@gmail.com
+ * @author - Marcos Maia
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
